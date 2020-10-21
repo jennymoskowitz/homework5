@@ -185,11 +185,6 @@ header{
 
   /* Cards! */
   .card {
-    /*Your  code here again.*/
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     flex-basis: 225px;
 
   }
@@ -224,8 +219,25 @@ header{
     flex-basis: 200px;
   }
   /*Your code here again.*/
+  body{
+    background-image: none;
+  }
+  .pricing{
+    align-items: flex-start;
+  }
+  .gallery, #gallery{
+    display: none;
+  }
+
   /*You will want four selectors*/  
 }
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
+
+@media (prefers-reduced-motion:reduce) {
+  #logo{
+    /*Your code here.*/
+    animation: none;
+ }
+}
